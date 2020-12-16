@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'rf_dewi_expandedblack';
+	src: url(../../assets/fonts/rfdewiexpanded-black.eot) format('embedded-opentype'),
+	url(../../assets/fonts/rfdewiexpanded-black.eot) format('embedded-opentype'),
+	url(../../assets/fonts/rfdewiexpanded-black.woff2) format('woff2'),
+	url(../../assets/fonts/rfdewiexpanded-black.woff) format('woff'),
+	url(../../assets/fonts/rfdewiexpanded-black.ttf) format('truetype'),
+	url(../../assets/fonts/rfdewiexpanded-black.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
