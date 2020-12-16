@@ -1,2 +1,0 @@
-# sslab
-SSlab test
