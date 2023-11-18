@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+
+
+<style>
+ a:hover,
+ a:focus{
+ text-decoration: none;
+ outline: none;
+ }
+.btn-gradient-primary {
+ color: #fff;
+ border: none;
+ background: #7a5449;
+ background: linear-gradient(45deg, #7a5449, #6640b2) !important;
+ background: -webkit-bg-linear-gradient(45deg, #7a5449, #6640b2) !important; }
+ .btn-gradient-primary:hover, .btn-gradient-primary:focus {
+ color: #fff;
+ background: #6f483d;
+ background: linear-gradient(45deg, #6f483d, #603bab) !important;
+ background: -webkit-bg-linear-gradient(45deg, #6f483d, #603bab) !important; }
+ .btn-gradient-primary:not(:disabled):not(.disabled).active, .btn-gradient-primary:not(:disabled):not(.disabled):active {
+ color: #fff;
+ background: #633d32;
+ background: linear-gradient(45deg, #633d32, #5935a3) !important;
+ background: -webkit-bg-linear-gradient(45deg, #633d32, #5935a3) !important; }
+ .btn-gradient-primary.disabled, .btn-gradient-primary:disabled {
+ color: #fff;
+ background: #bca9a4;
+ background: linear-gradient(45deg, #bca9a4, #b29fd8) !important;
+ background: -webkit-bg-linear-gradient(45deg, #bca9a4, #b29fd8) !important; }
+</style>
+
+ <div class="container">
+ <div class="row">
+
+<button class="btn btn-gradient-primary btn-lg btn-block" data-toggle="modal" data-target="#perevod">
+<span><i class="fa fa-money"></i></span>
+<span class="btn-text text-default">Сделать перевод</span>
+</button> 
+
+ </div>
+ </div>
+
+<div class="modal fade" id="perevod" tabindex="-1" role="dialog">
+
+ <div class="modal-dialog modal-xl">
+ <div class="modal-content"> 
+ <div class="card">
+ <div class="card-body">
+ 
+ <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+ <span aria-hidden="true">&times;</span>
+ </button>
+ 
+<h4 class="py-10 text-center">Перевод сайту BootstrapTema</h4>
+<form method="POST" action="https://yoomoney.ru/quickpay/confirm.xml">
+<div class="form-group row">
+<label class="col-sm-4 col-form-label">Сумма пожертвования ₽</label>
+<div class="col-sm-8">
+<input type="text" name="sum" value="" data-type="number" class="form-control" placeholder="Введите сумму">
+</div>
+</div>
+<div class="form-group row">
+<label class="col-sm-4 col-form-label">На ЮMoney кошелёк №</label>
+<div class="col-sm-8">
+<input type="text" name="receiver" value="4100117804701310" class="form-control" readonly>
+</div>
+</div>
+<input type="hidden" name="targets" value="Перевод сайту BootstrapTema"> 
+<div class="form-group row">
+<label class="col-sm-4 col-form-label">Оставьте комментарий</label>
+<div class="col-sm-8">
+<input type="text" name="comment" class="form-control" placeholder="По желанию">
+</div>
+</div>
+<input type="hidden" name="quickpay-form" value="donate">
+<div class="form-group form-check">
+<input type="radio" name="paymentType" value="PC" class="form-check-input">
+<label class="form-check-label">ЮMoney Деньгами</label>
+</div>
+<div class="form-group form-check">
+<input type="radio" name="paymentType" value="AC" class="form-check-input">
+ <label class="form-check-label">Банковской картой</label>
+</div>
+
+<input type="submit" value="Перевести" class="btn btn-gradient-primary btn-block btn-lg">
+</form>
+
+ </div>
+ </div>
+ </div>
+ </div>
+ 
+</div>
